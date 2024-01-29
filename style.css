@@ -11,13 +11,11 @@ html {
 
 body {
   /* background-image: linear-gradient(to right, #ee9ca7, #ffdde1); */
-  background-color: #fff5e0;
+  background-color: #fff5e0 !important;
 }
 
-header {
-  min-height: 40px;
-  background-color: #ba1d1d;
-}
+/* header {
+} */
 
 nav .flex-container {
   display: flex;
@@ -29,6 +27,13 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-absolute {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 nav li {
@@ -98,10 +103,8 @@ nav a:hover {
 }
 
 /* MAIN STARTS */
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10%;
+.containerKKN {
+  position: relative;
 }
 
 .welcome {
@@ -111,6 +114,16 @@ nav a:hover {
   border-radius: 15px;
   color: white;
   font-size: 2em;
+}
+
+.text-kkn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 90px !important;
 }
 
 .normal-text {
@@ -123,51 +136,25 @@ nav a:hover {
   margin-bottom: 28px;
 }
 
-.right a {
-  text-decoration: none;
-  color: white;
-  border-radius: 15px;
-  font-size: 1.5em;
-  margin-right: 20px;
-  font-weight: 800;
+.full-img {
+  width: 100%;
+  filter: brightness(40%);
 }
 
-.right a:hover {
-  color: #ee9ca7;
-  opacity: 0.8;
+.theme {
+  text-align: center;
 }
-
-.marketplace {
-  display: flex;
-  justify-content: flex-start;
+.text-judul-tema {
+  font-size: 60px;
 }
+.text-tema {
+  font-size: 36px;
 
-.shopee img {
-  width: 30px;
-  margin-right: 5px;
-}
-
-.shopee {
-  background: #ba1d1d;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.tokped img {
-  width: 30px;
-  margin-right: 5px;
-}
-
-.tokped {
-  background: #ba1d1d;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
+  padding: 40px 120px;
 }
 
 @media (max-width: 1030px) {
-  .container {
+  .containerKKN {
     flex-direction: column;
   }
 
@@ -393,6 +380,23 @@ nav a:hover {
   }
 }
 
+/* GALERY KKN */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  margin: 20px;
+  border-radius: 100%;
+  width: 10%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
 /* TENTANG PENULIS STARTS */
 aside {
   display: flex;
@@ -443,6 +447,13 @@ aside {
   }
 }
 
+/* MAP KKN */
+#map {
+  height: 100%;
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
 /* FOOTER STARTS */
 .social-media a {
   color: #4f0000;
@@ -475,7 +486,7 @@ footer {
 /* Adjust the flex container style for the footer */
 footer .flex-container {
   display: flex;
-  margin: 50px 50px 50px 100px; 
+  margin: 50px 50px 50px 100px;
   justify-content: space-around;
   padding: 25px 50px 75px 100px;
 }
@@ -484,8 +495,12 @@ footer .flex-container {
 footer .wrap-logo {
   margin: 0 10px; /* Add margin for spacing between logos */
 }
-p .tema{
+p .tema {
   color: white;
+}
+
+.tema {
+  font-size: 36px;
 }
 /* Adjust the logo image style for the footer */
 footer .wrap-logo img {
@@ -493,6 +508,6 @@ footer .wrap-logo img {
 }
 @media (max-width: 444px) {
   footer h4 {
-      font-size: 1em;
+    font-size: 1em;
   }
 }
