@@ -12,22 +12,13 @@ toggleButton.addEventListener("click", () => {
 const wrapperSlider = document.querySelector(".wrapper-slider");
 const slider = document.querySelector(".slider");
 
-const wrapperSlider2 = document.querySelector(".wrapper-slider2");
-const slider2 = document.querySelector(".slider2");
-
-let clicked = false,
-  clicked2 = false;
-let xAxis, xAxis2;
-let x, x2;
+let clicked = false;
+let xAxis;
+let x;
 
 wrapperSlider.addEventListener("mouseup", () => {
   wrapperSlider.style.cursor = `grab`;
 });
-
-wrapperSlider2.addEventListener("mouseup", () => {
-  wrapperSlider2.style.cursor = `grab`;
-});
-
 wrapperSlider.addEventListener("mousedown", (e) => {
   clicked = true;
   xAxis = e.offsetX - slider.offsetLeft;
@@ -36,20 +27,8 @@ wrapperSlider.addEventListener("mousedown", (e) => {
   wrapperSlider.style.cursor = `grabbing`;
 });
 
-wrapperSlider2.addEventListener("mousedown", (e) => {
-  clicked2 = true;
-  xAxis2 = e.offsetX - slider2.offsetLeft;
-  // current position
-
-  wrapperSlider2.style.cursor = `grabbing`;
-});
-
 window.addEventListener("mouseup", () => {
   clicked = false;
-});
-
-window.addEventListener("mouseup", () => {
-  clicked2 = false;
 });
 
 wrapperSlider.addEventListener("mousemove", (e) => {
@@ -63,17 +42,6 @@ wrapperSlider.addEventListener("mousemove", (e) => {
   checkSize();
 });
 
-wrapperSlider2.addEventListener("mousemove", (e) => {
-  if (!clicked2) return;
-  e.preventDefault();
-
-  x2 = e.offsetX;
-  slider2.style.left = `${x2 - xAxis2}px`;
-  // not scrolling forever
-
-  checkSize2();
-});
-
 function checkSize() {
   let wrapperSliderOut = wrapperSlider.getBoundingClientRect();
   let sliderIn = slider.getBoundingClientRect();
@@ -85,13 +53,31 @@ function checkSize() {
   }
 }
 
-function checkSize2() {
-  let wrapperSliderOut2 = wrapperSlider2.getBoundingClientRect();
-  let sliderIn2 = slider2.getBoundingClientRect();
+// MAP KKN
 
-  if (parseInt(slider2.style.left) > 0) {
-    slider2.style.left = `0px`;
-  } else if (sliderIn2.right < wrapperSliderOut2.right) {
-    slider2.style.left = `-${sliderIn2.width - wrapperSliderOut2.width}px`;
-  }
+let map;
+
+async function initMap() {
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
 }
+
+initMap();
