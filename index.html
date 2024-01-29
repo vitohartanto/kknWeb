@@ -1,194 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panoramagetan - Gondang</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panoramagetan - Gondang</title>
-  <!-- STYLE CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
 
-  <!-- JAVASCRIPT -->
-  <script src="script.js" defer></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- GOOGLE FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- ION ICONS -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ICON -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-  <!-- ICON -->
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-</head>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <!-- HEADER STARTS -->
-  <!-- <header> -->
-
-    <!-- navigation bar -->
-    <!-- <nav>
-      <!-- icon -->
-      <!-- <div class="wrap-logo"> -->
-        <!-- <a href="/index.html"> -->
-          <!-- <img class="logo" src="img/logo.png"> -->
-        <!-- </a> -->
-      <!-- </div> -->
-      <!-- menu -->
-      <!-- <ul id="nav-list"> -->
-        <!-- <li class="nav-list"><a href="\index.html">Home</a></li> -->
-        <!-- <li class="nav-list"><a href="#blog">Blog</a></li> -->
-        <!-- <li class="nav-list"><a href="#gallery">Gallery</a></li> -->
-        <!-- <li class="nav-list"><a href="#map">Peta</a></li> -->
-        <!-- <li class="nav-list"><a href="#about">About</a></li> -->
-      <!-- </ul> -->
-      <!-- hamburger menu -->
-      <!-- <span class="hamburger" id="toggle-button"> -->
-        <!-- <ion-icon name="menu"></ion-icon> -->
-      <!-- </span> -->
-    <!-- </nav> -->
-  <header>
-      <nav>
-          <div class="flex-container">
-              <!-- icon -->
-              <div class="wrap-logo">
-                  <a href="/index.html">
-                      <img class="logo" src="img/logo.webp">
-                  </a>
-              </div>
-              <!-- menu -->
-              <ul id="nav-list">
-                  <li class="nav-list"><a href="\index.html">Home</a></li>
-                  <li class="nav-list"><a href="#blog">Blog</a></li>
-                  <li class="nav-list"><a href="#gallery">Gallery</a></li>
-                  <!-- <li class="nav-list"><a href="#map">Peta</a></li> -->
-                  <li class="nav-list"><a href="#about">About</a></li>
-              </ul>
-              <!-- hamburger menu -->
-              <span class="hamburger" id="toggle-button">
-                  <ion-icon name="menu"></ion-icon>
-              </span>
+  <body>
+    <header>
+      <nav class="nav-absolute">
+        <div class="flex-container">
+          <!-- icon -->
+          <div class="wrap-logo">
+            <a href="/index.html">
+              <img class="logo" src="img/logo.webp" />
+            </a>
           </div>
+          <!-- menu -->
+          <ul id="nav-list">
+            <li class="nav-list"><a href="\index.html">Home</a></li>
+            <li class="nav-list"><a href="#blog">Blog</a></li>
+            <li class="nav-list"><a href="#gallery">Gallery</a></li>
+            <!-- <li class="nav-list"><a href="#map">Peta</a></li> -->
+            <li class="nav-list"><a href="#about">About</a></li>
+          </ul>
+          <!-- hamburger menu -->
+          <span class="hamburger" id="toggle-button">
+            <ion-icon name="menu"></ion-icon>
+          </span>
+        </div>
       </nav>
-  </header>
-  
+    </header>
 
-  <!-- HEADER ENDS -->
+    <!-- HEADER ENDS -->
 
-  <!-- MAIN STARTS -->
-  <main>
-    <article>
-      <!-- Hero Section -->
-      <section id="hero">
-        <!-- container fills with image for left side and welcome sentence for right side -->
-        <div class="container">
-          <!-- left side -->
-          <!-- <img class="left-img" src="img/hero.png" alt="Cooling Pad Vertex Cooling Pad"> -->
-          <img class="full-img" src="img/hero.png" alt="Cooling Pad Vertex Cooling Pad">
-          <!-- right side -->
-          <div class="right">
-            <h1 class="welcome">Selamat Datang!</h1>
-            <h3 class="normal-text spaces">Tersedia Cooling Pad Laptop Custom <br> Bagi Para Gamers</h3>
-
-            <!-- wrapper div for marketplace links -->
-            <div class="marketplace">
-              <a href="https://shp.ee/yce32py" class="shopee" target="_blank">
-                <img src="img/shopee.png" alt="Logo Shopee">
-                <span>Shopee</span>
-              </a>
-
-
-              <a href="https://tokopedia.link/1qDqrgtOjDb" class="tokped" target="_blank">
-                <img src="img/tokped.png" alt="Logo Tokopedia">
-                <span>Tokopedia</span>
-              </a>
-
+    <!-- MAIN STARTS -->
+    <main>
+      <article>
+        <!-- Hero Section -->
+        <section id="hero">
+          <!-- container fills with image for left side and welcome sentence for right side -->
+          <div class="">
+            <div class="containerKKN">
+              <!-- left side -->
+              <img class="full-img" src="img/rumput2.jpeg" alt="Rumput" />
+              <!-- right side -->
+              <div class="text-kkn fs-1">
+                <p class="fs-1">KKN-PPM UGM #namakecamatan PERIODE 4</p>
+                <p class="fs-1">TAHUN 2023</p>
+              </div>
             </div>
           </div>
+        </section>
 
+        <!-- Tema Section -->
+        <div class="theme">
+          <h1 class="text-judul-tema">Tema Besar</h1>
+          <h1 class="text-tema">
+            Menuju Desa Gondang Yang Berkelanjutan (Sustainable Village) Yang
+            Berbasis Pada Pemanfaatan Sumberdaya Lokal Dan Pelestarian
+            Lingkungan Kecamatan Karangrejo, Kabupaten Magetan, Propinsi Jawa
+            Timur
+          </h1>
         </div>
 
-      </section>
+        <!-- Dokumentasi Galery Section -->
+        <section id="testimonials">
+          <div id="testimonial-image" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>
+                  I no longer have to sniff other dogs for love. I've found the
+                  hottest Corgi on TinDog. Woof.
+                </h2>
+                <img
+                  class="testimonial-image"
+                  src="img/dog-img.jpg"
+                  alt="dog-profile"
+                />
+                <em>Pebbles, New York</em>
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonial-text">
+                  My dog used to be so lonely, but with TinDog's help, they've
+                  found the love of their life. I think.
+                </h2>
+                <img
+                  class="testimonial-image"
+                  src="img/lady-img.jpg"
+                  alt="lady-profile"
+                />
+                <em>Beverly, Illinois</em>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonial-image"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonial-image"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
 
-      <!-- Keunggulan Section -->
-      <section id="blog">
-        <h2 class="sub-title blog-sub">Blog</h1>
+        <!-- Blog Section -->
+        <section id="blog">
+          <h2 class="sub-title blog-sub">Blog</h2>
 
           <!-- slider -->
           <div class="relative">
             <div class="wrapper-slider">
               <div class="slider">
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 1</h4>
-                    <p>Isi Blog</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sed mollitia tempore rerum provident quasi. Veniam ipsum
+                      ab aut hic esse!
+                    </p>
+                    <a href="">Link 1</a>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 2</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 3</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 4</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 5</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 6</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 7</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 8</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 9</h4>
                     <p>Isi Blog</p>
                   </span>
                 </div>
                 <div class="card-slider">
-                  <img src="img/laki.png" alt="">
+                  <img src="img/laki.png" alt="" />
                   <span>
                     <h4>Judul Blog 10</h4>
                     <p>Isi Blog</p>
@@ -197,114 +251,40 @@
               </div>
             </div>
           </div>
-      </section>
+        </section>
+      </article>
+    </main>
+    <!-- MAIN ENDS -->
 
-      <!-- Review Section -->
-      <section id="gallery">
-        <h2 class="sub-title gallery-sub">Review Produk</h1>
+    <!-- Map KKN Section -->
+    <div id="map"></div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap"
+    ></script>
 
-          <!-- slider -->
-          <div class="relative">
-            <div class="wrapper-slider2">
-              <div class="slider2">
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-                <div class="card-slider">
-                  <img src="img/laki.png" alt="">
-                  <span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    </article>
-
-
-    <!-- Tentang Penulis -->
-    <!-- <section id="map">
-      <h1 class="sub-title">Peta</h1>
-
-      <!-- wrapper div -->
-      <!-- <div class="card-tentang">
-
-        <img src="img/vito_cut.jpg" style="width: 50px;" alt="Vito Hartanto">
-
-        <span class="normal-text">
-          Vito Hartanto<br>
-          Lahir: Pekanbaru,<br>
-          2 November 2002<br>
-          Domisili: Sleman<br>
-          Status: Mahasiswa<br>
-          Institusi: UGM (Teknik Elektro)
-        </span>
-      </div>
-
-    </aside> --> -->
-  </main>
-  <!-- MAIN ENDS -->
-
-  <!-- FOOTER STARTS -->
-  <footer>
-    <div class="flex-container">
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div class="flex-container">
         <!-- Logo 1 -->
         <div class="wrap-logo">
-            <img src="img/ugm.png" alt="Logo 1">
+          <img src="img/ugm.png" alt="Logo 1" />
         </div>
         <!-- Logo 2 -->
-        <div class="wrap-logo"> 
-            <img src="img/kkn-ppm-ugm.jpg" alt="Logo 2">
+        <div class="wrap-logo">
+          <img src="img/kkn-ppm-ugm.jpg" alt="Logo 2" />
         </div>
         <!-- Logo 3 -->
         <div class="wrap-logo">
-            <img src="img/Logo-01.webp" alt="Logo 3">
+          <img src="img/Logo-01.webp" alt="Logo 3" />
         </div>
-    </div>
-    <div class = "paragraph-about">
-      <p class = "tema">Menuju Desa Gondang Yang Berkelanjutan (Sustainable Village) Yang <br>
-        Berbasis Pada Pemanfaatan Sumberdaya Lokal Dan Pelestarian <br>
-        Lingkungan Kecamatan Karangrejo, Kabupaten Magetan, Propinsi Jawa <br>
-        Timur
-      </p>
-    </div>
-  </footer>
-  
-  <!-- FOOTER ENDS -->
+      </div>
+      <div class="paragraph-about">
+        <p class="tema">Copyright</p>
+      </div>
+    </footer>
 
-
-</body>
-
+    <!-- FOOTER ENDS -->
+  </body>
 </html>
